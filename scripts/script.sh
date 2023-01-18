@@ -1,6 +1,8 @@
 
 echo "I'm running from the script"
-if [[ ${AD_PASS} == "123456:password" ]]; then
+
+if [[ !$AD_PASS -z ]]; then echo "pusta zmienna"
+if [[ $1 == "123456:password" ]]; then
   echo "podany credential to 123456:password"
 fi
 
