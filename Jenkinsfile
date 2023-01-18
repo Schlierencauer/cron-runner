@@ -10,7 +10,7 @@ pipeline{
                 echo env.AD_PASS
                 
                 sh("chmod +x ./scripts/script.sh")
-                sh( "./scripts/script.sh AD_PASS")
+                sh( "./scripts/script.sh")
             }
         }
     }
