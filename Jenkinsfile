@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        AD_PASS = credentials('jws_test_password')
+        AD_PASS = credentials('jws-test-password')
     }
     stages{
         stage("Hello"){
