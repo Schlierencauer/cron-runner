@@ -2,7 +2,7 @@
 
 echo "I'm running from the script"
 
-if [[ $AD_PASS -z ]]; then echo "pusta zmienna"
+if [[ -z "$AD_PASS" ]]; then echo "pusta zmienna"
 fi
 
 if [[ $1 == "123456:password" ]]; then
