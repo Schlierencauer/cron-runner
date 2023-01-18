@@ -2,10 +2,10 @@
 
 echo "I'm running from the script"
 
-if [[ -z "$AD_PASS" ]]; then echo "pusta zmienna"
+if [[ ! -z "$AD_PASS" ]]; then echo "nie pusta zmienna"
 fi
 
-if [[ $1 == "123456:password" ]]; then
+if [[ "$1" == "123456:password" ]]; then
   echo "podany credential to 123456:password"
 fi
 
