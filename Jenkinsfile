@@ -8,7 +8,7 @@ pipeline{
             steps{
                 echo "hello world"
                 echo env.AD_PASS
-                sh("export AD_PASS")
+                
                 sh("chmod +x ./scripts/script.sh")
                 sh( "./scripts/script.sh AD_PASS")
             }
