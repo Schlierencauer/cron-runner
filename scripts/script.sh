@@ -1,3 +1,4 @@
+#!/bin/bash
 
 echo "I'm running from the script"
 
